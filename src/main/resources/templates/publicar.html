@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/publicar.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+
+    
+    <title>publicação</title>
+</head>
+<body>
+
+
+<script>
+
+import { initializeApp } from "firebase/app";
+import { getStorage } from "firebase/storage";
+
+// TODO: Replace the following with your app's Firebase project configuration
+// See: https://firebase.google.com/docs/web/learn-more#config-object
+const firebaseConfig = {
+  // ...
+  storageBucket: ''
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+// Initialize Cloud Storage and get a reference to the service
+const storage = getStorage(app);
+
+</script>
+
+
+ <!-- Sidebar Começo -->
+ <div class="sidebar">
+
+    <div class="sidebarOption active">
+        <span class="material-icons">
+            home
+            </span>
+
+       <a href="./index"><h2>Inicio</h2></a> 
+    </div>
+
+    <div class="sidebarOption active">
+        <span class="material-icons">
+            search
+            </span>
+
+            <a href="./search">
+
+              <h2> Procurar</h2>
+
+          </a>
+    </div>
+
+    <div class="sidebarOption active">
+        <span class="material-icons">
+            add_circle
+            </span>
+
+            <a href="./publicar">
+
+                <h2> Publicar</h2>
+
+            </a>
+    </div>
+
+    <div class="sidebarOption active">
+         <span class="material-icons" >
+            perm_identity
+            </span>
+
+            <a href="./perfil">
+
+                <h2> Perfil</h2>
+
+            </a>
+    </div>
+
+
+    <div class="sidebarOption active">
+      <span class="material-icons">
+         logout
+         </span>
+    
+     <a href="./Usuario/login">
+     <h2>Sair</h2></a>
+ </div>
+    
+ <img class="logo" src="/assets/logo.png" alt="" srcset="">
+
+</div>
+
+
+<div class="body">
+  <div class="wrapper">
+    <header>Escolha oque deseja publicar</header>
+    <form action="#">
+      <input class="file-input" type="file" name="file" hidden>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Explorador de arquivos </p>
+    </form>
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+
+    <a href="./index">
+    <button class="btnEnviar"> Enviar</button>
+</a>
+  </div>
+
+  
+  
+</div>
+  <script src="/js/publicar.js"></script>
+
+
+</body>
+</html>

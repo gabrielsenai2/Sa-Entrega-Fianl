@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <title>Barra de pesquisa com autocomplete</title>
+  <link rel="shortcut icon" type="image/jpg" href="/assets/astronauta2.png"/>
+  <!-- <link rel="stylesheet" href="/css/procurar.css"> -->
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/procurar.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+                home
+                </span>
+
+                <a href="./index"><h2>Inicio</h2></a> 
+        </div>
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+                search
+                </span>
+
+                <a href="./search">
+
+                    <h2> Procurar</h2>
+    
+                </a>
+        </div>
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+                add_circle
+                </span>
+
+                <a href="./publicar">
+
+                    <h2> Publicar</h2>
+    
+                </a>
+        </div>
+
+        <div class="sidebarOption active">
+             <span class="material-icons" >
+                perm_identity
+                </span>
+
+            <a href="./perfil">
+
+                <h2> Perfil</h2>
+
+            </a>
+                
+        </div>
+
+
+        <div class="sidebarOption active">
+            <span class="material-icons">
+               logout
+               </span>
+          
+           <a href="./Usuario/login">
+           <h2>Sair</h2></a>
+       </div>
+       <img class="logo" src="/assets/logo.png" alt="" srcset="">
+    </div>
+
+  <div class="container">
+    <h2>Quem você está procurando?</h2>
+    <div class="search">
+      <select name="" id="" onchange="window.location.href=this.value;">
+        <option selected disabled>Pesquisa...</option>
+        <option value="./perfil">João_rizzo</option>
+        <option value="/perfis/perfil1">mn._.gabriel</option>
+        <option value="/perfis/perfil2">Diogo_s_Marques</option>
+        <option value="/perfis/perfil3">Erick_21</option>
+      </select>
+      <div class="icon"><ion-icon name="search-outline"></ion-icon></div>
+    </div>
+
+    <br><br>
+
+    <div class="imgs">
+      <img src="/assets/erick.jpg" alt="Photo" />
+      <img src="/assets/diogo.jpg" alt="Photo" />
+      <img src="/assets/User2.JPG" alt="Photo" />
+      <img src="/assets/minha foto.jpg" alt="Photo" />
+    </div>
+  </div>
+
+  <script src="/js/sugestoes.js"></script>
+  <script src="/js/search.js"></script>
+
+</body>
+
+</html>

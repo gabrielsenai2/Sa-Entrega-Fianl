@@ -1,0 +1,44 @@
+body {
+    background-image: url('https://ordinaryfaith.net/wp-content/uploads/2016/03/Gray-plain-website-background.jpg');;
+}
+  
+  .recuperacao{
+    padding-top: 20px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    margin-top: 60px;
+  }
+  
+  .email{
+    font-size: 18px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    width: 500px;
+    
+    background: gainsboro;
+    size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .enviar{
+    size: 40px;
+    padding: 15px;
+    
+    border-radius: 10px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    color: rgb(0, 0, 0);
+   
+    background: gainsboro;
+    cursor: pointer;
+  }
+
+  .enviar:hover{
+    background: rgb(249, 245, 245);
+    color: black
+  }
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/editarPerfil.css">
+    <!-- <link rel="stylesheet" href="/css/formularioeditarperfil.css"> -->
+    <title>Editar Perfil</title>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/astronauta2.png"/>
+</head>
+<body>
+    
+
+
+
+    <div class="header__wrapper">
+       
+        
+       
+       
+        <div class="cols__container">
+          <div class="left__col">
+            <div class="max-width">
+
+                <div class="imageContainer">
+            
+                    <img src="/assets/camera3.png" alt="Selecione uma Imagem" id="imgPhoto"  srcset="">
+                    
+                </div>
+
+               
+        </div>
+        
+            <p>Alterar foto de Perfil</p>
+        
+               
+               
+                <input type="file" id="fiimage" name="fiimage" accept="image/*"/> 
+            
+            
+               
+               </div>
+            </div>
+
+            
+
+            <section>
+                <h2>Alterar Biografia</h2>
+
+                <form action="https://api.staticforms.xyz/submit" method="post">
+
+                    <label>Nome</label>
+
+                    <input type="text" name="name" placeholder="Digite seu Nome" autocomplete="off">
+
+                    <label>Biografia</label>
+
+                    <input type="text" name="name" placeholder="Biografia" autocomplete="off">
+
+                    <button type="submit">Salvar</button>
+
+                    <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac" >
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+                </form>
+            </section>
+          
+
+
+</body>
+
+<script src="/js/editarPerfil.js"></script>
